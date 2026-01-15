@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "aiohttp>=3.13.3",
+    "orjson>=3.11.5",
     "ruff>=0.14.11",
 ]
 
