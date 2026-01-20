@@ -14,7 +14,7 @@ async def fetch_one(
             async with session.get(url, timeout=timeout) as resp:
                 return {url: resp.status}
 
-        except asyncio.TimeoutError as e:
+        except asyncio.TimeoutError:
             print(f"{url} -> timeout", file=sys.stderr)
             return {url: 504}
 

@@ -1,9 +1,10 @@
 import asyncio
+from concurrent.futures import ProcessPoolExecutor
+from multiprocessing import cpu_count
+
 import aiohttp
 import orjson
 from aiohttp import ClientTimeout
-from concurrent.futures import ProcessPoolExecutor
-from multiprocessing import cpu_count
 
 
 async def fetch_single_url(session, url, semaphore, loop, pool_executor):

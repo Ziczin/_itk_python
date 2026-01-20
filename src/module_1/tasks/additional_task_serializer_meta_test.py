@@ -2,12 +2,12 @@ import unittest
 
 from additional_task_serializer_meta import (
     BaseSerializer,
-    SerializerMeta,
-    SerializerCreationError,
-    SerializerMissingRequiredField,
-    SerializerAnnotationMissedError,
     SerializerAnnotationMismatchTypesError,
+    SerializerAnnotationMissedError,
+    SerializerCreationError,
     SerializerHeterogeneousCollectionsError,
+    SerializerMeta,
+    SerializerMissingRequiredField,
 )
 
 
